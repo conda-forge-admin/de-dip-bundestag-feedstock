@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: de-dip-bundestag
-  version: "0.1.1"
+  version: 0.1.1
 
 package:
   name: ${{ name|lower }}
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - poetry
   run:
@@ -39,8 +39,7 @@ tests:
 about:
   summary: "Bundestag: Dokumentations- und Informationssystem für Parlamentsmaterialien"
   license: Apache-2.0
-  license_file:
-    - LICENSE
+  license_file: LICENSE
   homepage: https://github.com/bundesAPI/dip-bundestag-api
 
 extra:
